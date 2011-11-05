@@ -1,0 +1,14 @@
+	<div id="browseLink">
+		<%= link_to 'przeglądaj', pics_url %>
+	</div> <!-- end signup -->
+	<div id="box">
+		<div id="slogan">
+			zdobądź<br>
+			reputację.
+		</div>
+		<div id="pics">
+			<% @pics.each do |pic| %>
+				<%= render :partial => "pic", :object => pic %>
+			<% end %>
+		</div>
+	</div> <!-- end box -->

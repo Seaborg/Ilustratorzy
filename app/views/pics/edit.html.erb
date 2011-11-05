@@ -1,0 +1,33 @@
+<%= render :partial => "layouts/head" %>
+<body>
+	<div id ="container">
+		<%#= render :partial => "layouts/header" %>
+		<div id="pageWrap">
+			<p id="notice" style="color: #e45d0a"><%= flash[:notice] %></p>
+			<h1>Edycja grafiki</h1>
+
+			<% form_for(@pic) do |f| %>
+			  <%= f.error_messages %>
+
+			  <p>
+			    <%= f.label :title, 'Nazwa' %><br />
+			    <%= f.text_field :title %>
+			  </p>
+			  <p>
+			    <%= f.label :description, 'Opis' %><br />
+			    <%= f.text_area :description %>
+			  </p>
+			  <p>
+			    <%= f.submit 'Aktualizuj' %>
+			  </p>
+			<% end %>
+
+			<%= link_to 'Pokaż', @pic %> |
+			<%= link_to 'Powrót', pics_path %>
+		</div> 
+		<div class="clearfooter"></div>
+	</div>
+	<%= render :partial => "layouts/bottom_links" %>
+	<%= render :partial => "layouts/barometer" %>
+</body>
+</html>

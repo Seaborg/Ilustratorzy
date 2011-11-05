@@ -1,0 +1,48 @@
+<%= render :partial => "layouts/head" %>
+</head>
+<body>
+	<div id ="container">
+		<%#"= render :partial => "layouts/header" %>
+		<div id="pageWrap">
+			<p id="notice" style="color: #e45d0a"><%= flash[:notice] %></p>
+			
+			<h1>załaduj swoją grafikę</h1>
+
+			<% form_for @pic, :html => { :multipart => :true } do |f| %>
+			  <%= f.error_messages %>
+
+			 <p>
+			    <%= f.label :photo, 'grafika/ilustracja' %><br />
+			    <%= f.file_field :photo %>
+			  </p>
+			<p>
+			<h4>	opcjonalnie: </h4>
+
+			  <p>
+			    <%= f.label :title, 'nazwa' %><br />
+			    <%= f.text_field :title %>
+			  </p>
+			  <p>
+			    <%= f.label :description, "Opis Grafiki / Ilustracji" %><br />
+			    <%= f.text_area :description %>
+			  </p>
+			  <%= f.hidden_field :user_id, :value => @current_user.id %>
+			  <p>
+			    <%= f.submit 'wyślij' %>  or <%= link_to 'zrezygnuj', @current_user %>
+			  </p>
+			<% end %>
+		</div> 
+		<div class="clearfooter"></div>
+	</div>
+	<%= render :partial => "layouts/bottom_links" %>
+	<%= render :partial => "layouts/barometer" %>
+</body>
+</html>
+
+
+
+
+
+
+
+

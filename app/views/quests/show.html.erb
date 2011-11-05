@@ -1,0 +1,30 @@
+<div id="questShow">
+<p>
+  	<h2><%=h @quest.title %></h2>
+</p>
+
+<p>
+  	<%= h @quest.description %>
+</p>
+
+<p>
+	<b>Wymagany poziom:</b>
+  	<%=h @quest.level_required %>
+</p>
+
+<p>
+	<strong>Zarób: <%=h @quest.hearts_awarded %> x <%= image_tag '/images/heart3.png'%>oraz <%=h @quest.reputation_awarded %> <strong>reputację.</strong><br />
+</p>
+</div>
+
+<div id="completeQuest">
+	<%= link_to 'Doładuj Pędzelki', complete_url(:id => @quest.id)%>
+</div>
+
+<p>
+<% if current_user && current_user.is_admin %>	
+	<%= link_to 'edytuj', edit_quest_path(@quest) %> |
+<% end %>
+
+<%= link_to 'cofnij', quests_path %>
+</p>

@@ -1,0 +1,17 @@
+<h1>wiadomości</h1>
+<div id="feedColumn">	
+	<% if @pics.length == 0 %>
+		Podążaj za swoimi przyjaciółmi aby otrzymywać nowe wiadomości.
+	<% else %>
+		<% @pics.each do |pic| %>
+			<% link_to pic do %>
+				<%=image_tag pic.photo.url(:thumb), :alt=>"" %>
+			<% end %>	
+		<% end %>
+	<% end %>
+</div>
+	<% if @show_more == true %>
+		<div id="moreFeedButton">
+			<%= link_to_remote 'więcej', {:url => more_feed_url }, :href => more_feed_url %>
+		</div>
+	<% end %>

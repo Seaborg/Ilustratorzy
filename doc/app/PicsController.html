@@ -1,0 +1,902 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: PicsController</title>
+
+	<link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+
+	<script src="./js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#classes">Classes</a>
+          <a href="./index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="./app/controllers/pics_controller_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="app/controllers/pics_controller.rb">app/controllers/pics_controller.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link"><a href="ApplicationController.html">ApplicationController</a></p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-i-create">#create</a></li>
+					
+					<li><a href="#method-i-current_user_must_own_pic">#current_user_must_own_pic</a></li>
+					
+					<li><a href="#method-i-destroy">#destroy</a></li>
+					
+					<li><a href="#method-i-edit">#edit</a></li>
+					
+					<li><a href="#method-i-index">#index</a></li>
+					
+					<li><a href="#method-i-more">#more</a></li>
+					
+					<li><a href="#method-i-more_comments">#more_comments</a></li>
+					
+					<li><a href="#method-i-new">#new</a></li>
+					
+					<li><a href="#method-i-random">#random</a></li>
+					
+					<li><a href="#method-i-show">#show</a></li>
+					
+					<li><a href="#method-i-show_hot">#show_hot</a></li>
+					
+					<li><a href="#method-i-show_new">#show_new</a></li>
+					
+					<li><a href="#method-i-show_top">#show_top</a></li>
+					
+					<li><a href="#method-i-update">#update</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="./doc/README_FOR_APP.html">README_FOR_APP</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="./images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="./ActivationsController.html">ActivationsController</a></li>
+				
+					<li><a href="./ActivationsHelper.html">ActivationsHelper</a></li>
+				
+					<li><a href="./AdminController.html">AdminController</a></li>
+				
+					<li><a href="./AdminHelper.html">AdminHelper</a></li>
+				
+					<li><a href="./ApplicationController.html">ApplicationController</a></li>
+				
+					<li><a href="./ApplicationHelper.html">ApplicationHelper</a></li>
+				
+					<li><a href="./Comment.html">Comment</a></li>
+				
+					<li><a href="./CommentsController.html">CommentsController</a></li>
+				
+					<li><a href="./CompletedQuest.html">CompletedQuest</a></li>
+				
+					<li><a href="./FeedController.html">FeedController</a></li>
+				
+					<li><a href="./FeedHelper.html">FeedHelper</a></li>
+				
+					<li><a href="./Feedback.html">Feedback</a></li>
+				
+					<li><a href="./FeedbacksController.html">FeedbacksController</a></li>
+				
+					<li><a href="./FeedbacksHelper.html">FeedbacksHelper</a></li>
+				
+					<li><a href="./FooterController.html">FooterController</a></li>
+				
+					<li><a href="./FooterHelper.html">FooterHelper</a></li>
+				
+					<li><a href="./FriendsController.html">FriendsController</a></li>
+				
+					<li><a href="./FriendsHelper.html">FriendsHelper</a></li>
+				
+					<li><a href="./Friendship.html">Friendship</a></li>
+				
+					<li><a href="./Heart.html">Heart</a></li>
+				
+					<li><a href="./HeartsController.html">HeartsController</a></li>
+				
+					<li><a href="./Notification.html">Notification</a></li>
+				
+					<li><a href="./NotificationsController.html">NotificationsController</a></li>
+				
+					<li><a href="./NotificationsHelper.html">NotificationsHelper</a></li>
+				
+					<li><a href="./Notifier.html">Notifier</a></li>
+				
+					<li><a href="./Pic.html">Pic</a></li>
+				
+					<li><a href="./PicsController.html">PicsController</a></li>
+				
+					<li><a href="./PicsHelper.html">PicsHelper</a></li>
+				
+					<li><a href="./Post.html">Post</a></li>
+				
+					<li><a href="./PostsController.html">PostsController</a></li>
+				
+					<li><a href="./Quest.html">Quest</a></li>
+				
+					<li><a href="./QuestsController.html">QuestsController</a></li>
+				
+					<li><a href="./QuestsHelper.html">QuestsHelper</a></li>
+				
+					<li><a href="./SearchController.html">SearchController</a></li>
+				
+					<li><a href="./SearchHelper.html">SearchHelper</a></li>
+				
+					<li><a href="./Tag.html">Tag</a></li>
+				
+					<li><a href="./Tagging.html">Tagging</a></li>
+				
+					<li><a href="./TagsController.html">TagsController</a></li>
+				
+					<li><a href="./User.html">User</a></li>
+				
+					<li><a href="./UserSession.html">UserSession</a></li>
+				
+					<li><a href="./UserSessionsController.html">UserSessionsController</a></li>
+				
+					<li><a href="./UserSessionsHelper.html">UserSessionsHelper</a></li>
+				
+					<li><a href="./UsersController.html">UsersController</a></li>
+				
+					<li><a href="./UsersHelper.html">UsersHelper</a></li>
+				
+					<li><a href="./WelcomeController.html">WelcomeController</a></li>
+				
+					<li><a href="./WelcomeHelper.html">WelcomeHelper</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">PicsController</h1>
+
+		<div id="description">
+			
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="create-method" class="method-detail ">
+				<a name="method-i-create"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">create</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+POST /pics POST /pics.xml
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="create-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/controllers/pics_controller.rb, line 151</span>
+151:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">create</span>
+152:     <span class="ruby-ivar">@pic</span> = <span class="ruby-constant">Pic</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:pic</span>])
+153: 
+154:     <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+155:       <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@pic</span>.<span class="ruby-identifier">save</span>
+156:         <span class="ruby-identifier">flash</span>[<span class="ruby-value">:notice</span>] = <span class="ruby-value str">'Pic was successfully created.'</span>
+157:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">redirect_to</span>(<span class="ruby-ivar">@pic</span>) }
+158:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">render</span> <span class="ruby-value">:xml</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@pic</span>, <span class="ruby-value">:status</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:created</span>, <span class="ruby-value">:location</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@pic</span> }
+159:       <span class="ruby-keyword kw">else</span>
+160:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">render</span> <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">&quot;new&quot;</span> }
+161:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">render</span> <span class="ruby-value">:xml</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@pic</span>.<span class="ruby-identifier">errors</span>, <span class="ruby-value">:status</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:unprocessable_entity</span> }
+162:       <span class="ruby-keyword kw">end</span>
+163:     <span class="ruby-keyword kw">end</span>
+164:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="destroy-method" class="method-detail ">
+				<a name="method-i-destroy"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">destroy</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+DELETE /pics/1 DELETE /pics/1.xml
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="destroy-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/controllers/pics_controller.rb, line 183</span>
+183:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">destroy</span>
+184:     <span class="ruby-ivar">@pic</span>.<span class="ruby-identifier">destroy</span>
+185: 
+186:     <span class="ruby-identifier">notifications</span> = <span class="ruby-constant">Notification</span>.<span class="ruby-identifier">find</span>(<span class="ruby-value">:all</span>, <span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value str">'notification_type = ? and object_id = ?'</span>, <span class="ruby-value str">&quot;comment&quot;</span>, <span class="ruby-ivar">@pic</span>.<span class="ruby-identifier">id</span>])
+187:     <span class="ruby-identifier">notifications</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">n</span><span class="ruby-operator">|</span>
+188:       <span class="ruby-identifier">n</span>.<span class="ruby-identifier">destroy</span>
+189:     <span class="ruby-keyword kw">end</span>
+190:     <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+191:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">redirect_to</span>(<span class="ruby-identifier">root_url</span>) }
+192:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">head</span> <span class="ruby-value">:ok</span> }
+193:     <span class="ruby-keyword kw">end</span>
+194:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="edit-method" class="method-detail ">
+				<a name="method-i-edit"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">edit</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+GET /pics/1/edit
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="edit-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/controllers/pics_controller.rb, line 146</span>
+146:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">edit</span>
+147:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="index-method" class="method-detail ">
+				<a name="method-i-index"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">index</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+GET /pics GET /pics.xml
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="index-source">
+<pre>
+    <span class="ruby-comment cmt"># File app/controllers/pics_controller.rb, line 7</span>
+ 7:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">index</span>
+ 8:     <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">flash</span>[<span class="ruby-value">:pg</span>] <span class="ruby-operator">==</span> <span class="ruby-keyword kw">nil</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">flash</span>[<span class="ruby-value">:pg</span>] <span class="ruby-operator">==</span> <span class="ruby-value">0</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">flash</span>[<span class="ruby-value">:pg</span>] <span class="ruby-operator">==</span> <span class="ruby-identifier">flash</span>[<span class="ruby-value">:old_pg</span>] <span class="ruby-operator">||</span> <span class="ruby-identifier">flash</span>[<span class="ruby-value">:ajaxed</span>]
+ 9:       <span class="ruby-identifier">flash</span>[<span class="ruby-value">:pg</span>] = <span class="ruby-value">1</span>
+10:     <span class="ruby-keyword kw">end</span>
+11:     <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">flash</span>[<span class="ruby-value">:category</span>] <span class="ruby-operator">==</span> <span class="ruby-keyword kw">nil</span>
+12:       <span class="ruby-identifier">flash</span>[<span class="ruby-value">:category</span>] = <span class="ruby-value str">'new'</span>
+13:     <span class="ruby-keyword kw">end</span>
+14:     <span class="ruby-identifier">flash</span>[<span class="ruby-value">:old_pg</span>] = <span class="ruby-identifier">flash</span>[<span class="ruby-value">:pg</span>]
+15:     <span class="ruby-identifier">flash</span>[<span class="ruby-value">:category</span>] = <span class="ruby-identifier">flash</span>[<span class="ruby-value">:category</span>]
+16:     <span class="ruby-ivar">@pics</span> = <span class="ruby-constant">Pic</span>.<span class="ruby-identifier">get_pics</span>(<span class="ruby-identifier">flash</span>[<span class="ruby-value">:pg</span>], <span class="ruby-identifier">flash</span>[<span class="ruby-value">:category</span>])
+17:     <span class="ruby-keyword kw">if</span> <span class="ruby-constant">Pic</span>.<span class="ruby-identifier">more_pics_left?</span>(<span class="ruby-identifier">flash</span>[<span class="ruby-value">:pg</span>], <span class="ruby-identifier">flash</span>[<span class="ruby-value">:category</span>])
+18:       <span class="ruby-ivar">@show_more</span> = <span class="ruby-keyword kw">true</span>
+19:     <span class="ruby-keyword kw">else</span>
+20:       <span class="ruby-ivar">@show_more</span> = <span class="ruby-keyword kw">false</span>
+21:     <span class="ruby-keyword kw">end</span>
+22:     <span class="ruby-ivar">@tags</span> = <span class="ruby-constant">Tag</span>.<span class="ruby-identifier">ordered_by_taggings</span>.<span class="ruby-identifier">limit</span>(<span class="ruby-value">20</span>)
+23:     <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+24:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> <span class="ruby-comment cmt"># index.html.erb</span>
+25:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">render</span> <span class="ruby-value">:xml</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@pics</span> }
+26:     <span class="ruby-keyword kw">end</span>
+27:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="more-method" class="method-detail ">
+				<a name="method-i-more"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">more</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="more-source">
+<pre>
+    <span class="ruby-comment cmt"># File app/controllers/pics_controller.rb, line 29</span>
+29:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">more</span>
+30:     <span class="ruby-identifier">flash</span>[<span class="ruby-value">:old_pg</span>] = <span class="ruby-identifier">flash</span>[<span class="ruby-value">:pg</span>]
+31:     <span class="ruby-identifier">flash</span>[<span class="ruby-value">:category</span>] = <span class="ruby-identifier">flash</span>[<span class="ruby-value">:category</span>]
+32:     
+33:     <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">flash</span>[<span class="ruby-value">:pg</span>] <span class="ruby-operator">==</span> <span class="ruby-keyword kw">nil</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">flash</span>[<span class="ruby-value">:pg</span>] <span class="ruby-operator">==</span> <span class="ruby-value">0</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">flash</span>[<span class="ruby-value">:pg</span>] <span class="ruby-operator">==</span> <span class="ruby-value">1</span>
+34:       <span class="ruby-identifier">flash</span>[<span class="ruby-value">:pg</span>] = <span class="ruby-value">2</span>
+35:     <span class="ruby-keyword kw">else</span>
+36:       <span class="ruby-identifier">flash</span>[<span class="ruby-value">:pg</span>] <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+37:     <span class="ruby-keyword kw">end</span>
+38:     <span class="ruby-ivar">@new_pics</span> = <span class="ruby-constant">Pic</span>.<span class="ruby-identifier">get_pics</span>(<span class="ruby-identifier">flash</span>[<span class="ruby-value">:pg</span>], <span class="ruby-identifier">flash</span>[<span class="ruby-value">:category</span>])
+39:     <span class="ruby-keyword kw">if</span> <span class="ruby-constant">Pic</span>.<span class="ruby-identifier">more_pics_left?</span>(<span class="ruby-identifier">flash</span>[<span class="ruby-value">:pg</span>], <span class="ruby-identifier">flash</span>[<span class="ruby-value">:category</span>])
+40:       <span class="ruby-ivar">@show_more</span> = <span class="ruby-keyword kw">true</span>
+41:     <span class="ruby-keyword kw">else</span>
+42:       <span class="ruby-ivar">@show_more</span> = <span class="ruby-keyword kw">false</span>
+43:     <span class="ruby-keyword kw">end</span>
+44:     <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+45:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">redirect_to</span> <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'index'</span> }
+46:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">js</span> 
+47:     <span class="ruby-keyword kw">end</span>
+48:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="more-comments-method" class="method-detail ">
+				<a name="method-i-more_comments"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">more_comments</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="more-comments-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/controllers/pics_controller.rb, line 115</span>
+115:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">more_comments</span>
+116:     <span class="ruby-identifier">flash</span>[<span class="ruby-value">:old_comment_pg</span>] = <span class="ruby-identifier">flash</span>[<span class="ruby-value">:comment_pg</span>]
+117:     <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">flash</span>[<span class="ruby-value">:comment_pg</span>] <span class="ruby-operator">==</span> <span class="ruby-keyword kw">nil</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">flash</span>[<span class="ruby-value">:comment_pg</span>] <span class="ruby-operator">==</span> <span class="ruby-value">0</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">flash</span>[<span class="ruby-value">:comment_pg</span>] <span class="ruby-operator">==</span> <span class="ruby-value">1</span>
+118:       <span class="ruby-identifier">flash</span>[<span class="ruby-value">:comment_pg</span>] = <span class="ruby-value">2</span>
+119:     <span class="ruby-keyword kw">else</span>
+120:       <span class="ruby-identifier">flash</span>[<span class="ruby-value">:comment_pg</span>] <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+121:     <span class="ruby-keyword kw">end</span>
+122:     <span class="ruby-ivar">@pic</span> = <span class="ruby-constant">Pic</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">flash</span>[<span class="ruby-value">:pic_id</span>])
+123:     <span class="ruby-ivar">@new_comments</span> = <span class="ruby-ivar">@pic</span>.<span class="ruby-identifier">comments</span>.<span class="ruby-identifier">all</span>(<span class="ruby-value">:order</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'created_at DESC'</span>, <span class="ruby-value">:limit</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">10</span>, <span class="ruby-value">:offset</span> =<span class="ruby-operator">&gt;</span> (<span class="ruby-value">10</span>*(<span class="ruby-identifier">flash</span>[<span class="ruby-value">:comment_pg</span>]<span class="ruby-operator">-</span><span class="ruby-value">1</span>)) )
+124:     <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@pic</span>.<span class="ruby-identifier">comments</span>.<span class="ruby-identifier">count</span> <span class="ruby-operator">&gt;</span> (<span class="ruby-value">10</span>*(<span class="ruby-identifier">flash</span>[<span class="ruby-value">:comment_pg</span>]))
+125:       <span class="ruby-ivar">@show_more_comments</span> = <span class="ruby-keyword kw">true</span>
+126:     <span class="ruby-keyword kw">end</span>
+127:     <span class="ruby-identifier">flash</span>[<span class="ruby-value">:pic_id</span>] = <span class="ruby-ivar">@pic</span>.<span class="ruby-identifier">id</span>
+128:     <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+129:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">redirect_to</span> <span class="ruby-ivar">@pic</span> }
+130:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">js</span> 
+131:     <span class="ruby-keyword kw">end</span>
+132:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="new-method" class="method-detail ">
+				<a name="method-i-new"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">new</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+GET /pics/new GET /pics/new.xml
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="new-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/controllers/pics_controller.rb, line 136</span>
+136:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">new</span>
+137:     <span class="ruby-ivar">@pic</span> = <span class="ruby-constant">Pic</span>.<span class="ruby-identifier">new</span>
+138:     
+139:     <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+140:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> <span class="ruby-comment cmt"># new.html.erb</span>
+141:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">render</span> <span class="ruby-value">:xml</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@pic</span> }
+142:     <span class="ruby-keyword kw">end</span>
+143:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="random-method" class="method-detail ">
+				<a name="method-i-random"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">random</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="random-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/controllers/pics_controller.rb, line 108</span>
+108:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">random</span>
+109:     <span class="ruby-ivar">@random_pic</span> = <span class="ruby-constant">Pic</span>.<span class="ruby-identifier">find</span>(<span class="ruby-value">:first</span>, <span class="ruby-value">:order</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">&quot;Random()&quot;</span>)
+110:     <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+111:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">redirect_to</span> <span class="ruby-ivar">@random_pic</span> }
+112:     <span class="ruby-keyword kw">end</span>
+113:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="show-method" class="method-detail ">
+				<a name="method-i-show"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">show</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+GET /pics/1 GET /pics/1.xml
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="show-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/controllers/pics_controller.rb, line 71</span>
+ 71:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">show</span>
+ 72:     <span class="ruby-ivar">@pic</span> = <span class="ruby-constant">Pic</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>]) 
+ 73:     <span class="ruby-ivar">@next</span> = <span class="ruby-constant">Pic</span>.<span class="ruby-identifier">get_next</span>(<span class="ruby-ivar">@pic</span>)
+ 74:     <span class="ruby-ivar">@user</span> = <span class="ruby-ivar">@pic</span>.<span class="ruby-identifier">user</span>
+ 75:     <span class="ruby-ivar">@taggings</span> = <span class="ruby-constant">Tagging</span>.<span class="ruby-identifier">find</span>(<span class="ruby-value">:all</span>, <span class="ruby-value">:include</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:tag</span>, <span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:pic_id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@pic</span>.<span class="ruby-identifier">id</span>}, <span class="ruby-value">:order</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'created_at'</span>)
+ 76:     <span class="ruby-identifier">flash</span>[<span class="ruby-value">:pic_id</span>] = <span class="ruby-ivar">@pic</span>.<span class="ruby-identifier">id</span>
+ 77:     <span class="ruby-identifier">default_string</span> = <span class="ruby-value str">&quot;photo, photography, photographer, pic, picture, share, heart, rank, level, reputation, professional, amateur, digital, analog, film, community, crowdsource, social&quot;</span>
+ 78:     <span class="ruby-identifier">tags_string</span> = <span class="ruby-value str">&quot;&quot;</span>
+ 79:     <span class="ruby-ivar">@taggings</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">tagging</span><span class="ruby-operator">|</span> 
+ 80:       <span class="ruby-identifier">tags_string</span> = <span class="ruby-node">&quot;#{tags_string}&quot;</span><span class="ruby-operator">+</span><span class="ruby-node">&quot;, #{tagging.tag.name}&quot;</span>
+ 81:     <span class="ruby-keyword kw">end</span>
+ 82:     <span class="ruby-identifier">tags_string</span> = <span class="ruby-identifier">tags_string</span>[<span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-value">340</span>]
+ 83:     <span class="ruby-ivar">@keywords_string</span> = <span class="ruby-node">&quot;#{default_string}&quot;</span><span class="ruby-operator">+</span><span class="ruby-node">&quot;#{tags_string}&quot;</span>
+ 84:     
+ 85:     <span class="ruby-ivar">@pic</span>.<span class="ruby-identifier">view_count</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+ 86:     <span class="ruby-ivar">@pic</span>.<span class="ruby-identifier">save</span>
+ 87:     <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">flash</span>[<span class="ruby-value">:comment_pg</span>] <span class="ruby-operator">==</span> <span class="ruby-keyword kw">nil</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">flash</span>[<span class="ruby-value">:comment_pg</span>] <span class="ruby-operator">==</span> <span class="ruby-value">0</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">flash</span>[<span class="ruby-value">:comment_pg</span>] <span class="ruby-operator">==</span> <span class="ruby-identifier">flash</span>[<span class="ruby-value">:old_comment_pg</span>] <span class="ruby-operator">||</span> <span class="ruby-identifier">flash</span>[<span class="ruby-value">:ajaxed</span>]
+ 88:       <span class="ruby-identifier">flash</span>[<span class="ruby-value">:comment_pg</span>] = <span class="ruby-value">1</span>
+ 89:     <span class="ruby-keyword kw">end</span>
+ 90:     <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">flash</span>[<span class="ruby-value">:comment_pg</span>] <span class="ruby-operator">==</span> <span class="ruby-value">1</span>
+ 91:       <span class="ruby-ivar">@comments</span> = <span class="ruby-ivar">@pic</span>.<span class="ruby-identifier">comments</span>.<span class="ruby-identifier">all</span>(<span class="ruby-value">:order</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'created_at DESC'</span>, <span class="ruby-value">:limit</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">Comment</span><span class="ruby-operator">::</span><span class="ruby-constant">PG_SIZE</span>)
+ 92:     <span class="ruby-keyword kw">else</span>
+ 93:       <span class="ruby-identifier">flash</span>[<span class="ruby-value">:comment_pg</span>] = <span class="ruby-identifier">flash</span>[<span class="ruby-value">:comment_pg</span>]
+ 94:       <span class="ruby-ivar">@comments</span> = <span class="ruby-ivar">@pic</span>.<span class="ruby-identifier">comments</span>.<span class="ruby-identifier">all</span>(<span class="ruby-value">:order</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'created_at DESC'</span>, <span class="ruby-value">:limit</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">Comment</span><span class="ruby-operator">::</span><span class="ruby-constant">PG_SIZE</span>, <span class="ruby-value">:offset</span> =<span class="ruby-operator">&gt;</span> (<span class="ruby-constant">Comment</span><span class="ruby-operator">::</span><span class="ruby-constant">PG_SIZE</span>*(<span class="ruby-identifier">flash</span>[<span class="ruby-value">:comment_pg</span>]<span class="ruby-operator">-</span><span class="ruby-value">1</span>))  )
+ 95:     <span class="ruby-keyword kw">end</span>
+ 96:     <span class="ruby-identifier">flash</span>[<span class="ruby-value">:old_comment_pg</span>] = <span class="ruby-identifier">flash</span>[<span class="ruby-value">:comment_pg</span>]
+ 97:     <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@pic</span>.<span class="ruby-identifier">comments</span>.<span class="ruby-identifier">count</span> <span class="ruby-operator">&gt;</span> (<span class="ruby-constant">Comment</span><span class="ruby-operator">::</span><span class="ruby-constant">PG_SIZE</span>*(<span class="ruby-identifier">flash</span>[<span class="ruby-value">:comment_pg</span>]))
+ 98:       <span class="ruby-ivar">@show_more_comments</span> = <span class="ruby-keyword kw">true</span>
+ 99:     <span class="ruby-keyword kw">end</span>
+100:     
+101:     <span class="ruby-identifier">flash</span>[<span class="ruby-value">:pic_id</span>] = <span class="ruby-ivar">@pic</span>.<span class="ruby-identifier">id</span>
+102:     <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+103:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> <span class="ruby-comment cmt"># show.html.erb</span>
+104:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">render</span> <span class="ruby-value">:xml</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@pic</span> }
+105:     <span class="ruby-keyword kw">end</span>
+106:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="show-hot-method" class="method-detail ">
+				<a name="method-i-show_hot"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">show_hot</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="show-hot-source">
+<pre>
+    <span class="ruby-comment cmt"># File app/controllers/pics_controller.rb, line 57</span>
+57:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">show_hot</span>
+58:     <span class="ruby-identifier">flash</span>[<span class="ruby-value">:category</span>] = <span class="ruby-value str">'hot'</span>
+59:     <span class="ruby-identifier">flash</span>[<span class="ruby-value">:pg</span>] = <span class="ruby-value">1</span>
+60:     <span class="ruby-identifier">redirect_to</span> <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'index'</span>
+61:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="show-new-method" class="method-detail ">
+				<a name="method-i-show_new"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">show_new</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="show-new-source">
+<pre>
+    <span class="ruby-comment cmt"># File app/controllers/pics_controller.rb, line 63</span>
+63:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">show_new</span>
+64:     <span class="ruby-identifier">flash</span>[<span class="ruby-value">:category</span>] = <span class="ruby-value str">'new'</span>
+65:     <span class="ruby-identifier">flash</span>[<span class="ruby-value">:pg</span>] = <span class="ruby-value">1</span>
+66:     <span class="ruby-identifier">redirect_to</span> <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'index'</span>
+67:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="show-top-method" class="method-detail ">
+				<a name="method-i-show_top"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">show_top</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="show-top-source">
+<pre>
+    <span class="ruby-comment cmt"># File app/controllers/pics_controller.rb, line 51</span>
+51:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">show_top</span>
+52:     <span class="ruby-identifier">flash</span>[<span class="ruby-value">:category</span>] = <span class="ruby-value str">'top'</span>
+53:     <span class="ruby-identifier">flash</span>[<span class="ruby-value">:pg</span>] = <span class="ruby-value">1</span>
+54:     <span class="ruby-identifier">redirect_to</span> <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'index'</span>
+55:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="update-method" class="method-detail ">
+				<a name="method-i-update"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">update</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+PUT /pics/1 PUT /pics/1.xml
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="update-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/controllers/pics_controller.rb, line 168</span>
+168:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">update</span>
+169:     <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+170:       <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@pic</span>.<span class="ruby-identifier">update_attributes</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:pic</span>])
+171:         <span class="ruby-identifier">flash</span>[<span class="ruby-value">:notice</span>] = <span class="ruby-value str">'Pic was successfully updated.'</span>
+172:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">redirect_to</span>(<span class="ruby-ivar">@pic</span>) }
+173:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">head</span> <span class="ruby-value">:ok</span> }
+174:       <span class="ruby-keyword kw">else</span>
+175:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">render</span> <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">&quot;edit&quot;</span> }
+176:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">render</span> <span class="ruby-value">:xml</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@pic</span>.<span class="ruby-identifier">errors</span>, <span class="ruby-value">:status</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:unprocessable_entity</span> }
+177:       <span class="ruby-keyword kw">end</span>
+178:     <span class="ruby-keyword kw">end</span>
+179:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="private-instance-method-details" class="method-section section">
+			<h3 class="section-header">Private Instance Methods</h3>
+
+		
+			<div id="current-user-must-own-pic-method" class="method-detail ">
+				<a name="method-i-current_user_must_own_pic"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">current_user_must_own_pic</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="current-user-must-own-pic-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/controllers/pics_controller.rb, line 199</span>
+199:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">current_user_must_own_pic</span>
+200:     <span class="ruby-ivar">@pic</span> = <span class="ruby-constant">Pic</span>.<span class="ruby-identifier">find</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>]
+201:     <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">current_user</span> <span class="ruby-operator">&amp;&amp;</span> (<span class="ruby-identifier">current_user</span>.<span class="ruby-identifier">owns_pic?</span>(<span class="ruby-ivar">@pic</span>) <span class="ruby-operator">||</span> <span class="ruby-identifier">current_user</span>.<span class="ruby-identifier">is_admin</span>)
+202:       <span class="ruby-keyword kw">return</span>
+203:     <span class="ruby-keyword kw">else</span>
+204:       <span class="ruby-identifier">flash</span>[<span class="ruby-value">:notice</span>] = <span class="ruby-value str">'You must own a pic to edit it.'</span>
+205:       <span class="ruby-identifier">redirect_to</span> <span class="ruby-value">:back</span>
+206:     <span class="ruby-keyword kw">end</span>
+207:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

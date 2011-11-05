@@ -1,0 +1,6 @@
+<h1>Aktywuj swoje konto</h1>
+
+<% form_for @user, :url => activate_path(@user.id), :html => { :method => :post } do |f| %>
+	<%= f.error_messages %>
+	<%= f.submit "Aktywuj" %>
+<% end %>

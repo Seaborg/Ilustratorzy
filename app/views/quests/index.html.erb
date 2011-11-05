@@ -1,0 +1,24 @@
+<div id="quests">
+<h1>zarób darmowe kredki za:</h1>
+<% @quests.each do |quest| %>
+	<div class="quest">
+		<div class="questDetails">
+			<div class="questRequirements"><strong>wymagany poziom:</strong> <%=h quest.level_required %></div>
+	    	<div class="questRewards"><strong><%=h quest.hearts_awarded %> x <%= image_tag '/images/heart3.png'%> reput.: <%=h quest.reputation_awarded %> </strong></div>
+	    </div>
+		<div class="questTitle"><%= link_to h(quest.title), quest %></div>
+    	<div class="questDescription"><%= (h quest.description) %></div>
+		
+    	
+		<% if current_user && current_user.is_admin %>
+			<%= link_to 'Edytuj', edit_quest_path(quest) %>
+    		<%= link_to 'Zniszcz', quest, :confirm => 'Jesteś pewny', :method => :delete %>
+		<% end %>
+	</div>
+<% end %>
+<br />
+
+<% if current_user && current_user.is_admin%>
+	<%= link_to 'Nowy zarobek', new_quest_path %>
+<% end %>
+</div>

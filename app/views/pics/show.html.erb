@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Ilustratorzy.pl | Dzieło <%=h @user.login %></title>
+  <%= stylesheet_link_tag 'style' %>
+  <%= javascript_include_tag  :defaults %>
+  <META NAME="author" CONTENT="Juliusz Filipowski">
+  <META NAME="subject" CONTENT="Grafika, Ilustracje">
+  <META NAME="Description" CONTENT="
+Darmowy Serwis Społecznościowy dla Grafików i Ilustratorów, którzy chcą sprawdzić się w oczach innych grafików i potencjalnych zleceniodawców. Załaduj swoją grafikę i podnoś swoje kwalifikacje.">
+  <META NAME="Classification" CONTENT="Ilustracja, Grafika">
+  <META NAME="Keywords" CONTENT="grfika, ilustracja, ">
+  <META NAME="Geography" CONTENT="Poland">
+  <META NAME="Language" CONTENT="Polish">
+  <META NAME="Revisit-After" CONTENT="1">
+  <META NAME="distribution" CONTENT="Global">
+  <META NAME="Robots" CONTENT="INDEX,FOLLOW">
+  <META NAME="country" CONTENT="Polska">
+  <META NAME="rank" CONTENT="1">
+  <META NAME="keywords" CONTENT="<%=@keywords_string%>" > 
+	
+  <%#Tu zmienilem, trzeba by pewnie zrobic analitycs/= render :partial => "layouts/analytics" %>
+
+</head>
+<body>
+	<div id ="container">
+		<%#= render :partial => "layouts/header" %>
+		<div id="pageWrap">
+			<p id="notice" style="color: #e45d0a"><%= flash[:notice] %></p>
+			<%= render :partial => "pic" %> 
+			<%= render :partial => "comments" %>
+		</div> 
+		<div class="clearfooter"></div>
+	</div>
+	<%= render :partial => "layouts/bottom_links" %>
+	<%= render :partial => "layouts/barometer" %>
+</body>
+</html>

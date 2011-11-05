@@ -1,0 +1,12 @@
+<h1>za przyjaciółmi</h1>
+<div id="feedColumn">	
+	<% unless @following.count == 0 %>
+		<% @following.each do |user| %>
+			<% link_to user do %>
+				<%=image_tag user.avatar.url(:thumb), :alt=>"" %>
+			<% end %>	
+		<% end %>
+	<% else %>
+		Nie podążasz za żadnym przyjacielem.
+	<% end %>
+</div>

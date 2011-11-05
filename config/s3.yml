@@ -1,0 +1,14 @@
+development:
+  bucket: aaa
+  access_key_id: bbb
+  secret_access_key: ccc
+
+test:
+  bucket: aaa
+  access_key_id: bbb
+  secret_access_key: ccc
+
+production:
+  bucket: aaa
+  access_key_id: bbb
+  secret_access_key: ccc

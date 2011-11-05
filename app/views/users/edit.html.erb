@@ -1,0 +1,25 @@
+<h1>edytuj profil</h1>
+ 
+<% form_for @user, :html => { :multipart => :true }, :url => url_for(:controller => 'users', :action => 'show', :id => @user.id ) do |f| %>
+  <%= f.error_messages %><br />
+  
+  <%= f.label 'edytuj lokalizację' %><br />
+  <%= f.text_field :location %><br />
+  <br />
+
+  <%= f.label 'edytuj hasło', f.object.new_record? ? nil : "zmień hasło" %><br />
+  <%= f.password_field :password %><br />
+  <br />
+  
+  <%= f.label :password_confirmation, "potwierdzenie hasła" %><br />
+  <%= f.password_field :password_confirmation %><br />
+  <br />
+
+  <%= f.label 'edytuj zdjęcie profilu' %><br />
+  <%= f.file_field :avatar %><br />
+  <br />
+
+  <%= f.submit "uaktualnij" %>
+
+   albo <%= link_to "zrezygnuj", url_for(:controller => 'users', :action => 'show', :id => @user.id ) %>
+<% end %>

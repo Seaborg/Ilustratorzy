@@ -1,0 +1,26 @@
+<div id="header">
+	<div id="headerContent">
+		<div id="title">
+			<%= link_to image_tag("/images/logo.png"), root_url %>
+		</div> <!-- end title -->
+
+		<% if current_user %>
+			<div class="menuItem" id="loggedInBrowse"><%= link_to "przeglądaj", pics_url %></div>
+			<div class="menuItem"><%= link_to "wiadomości", feed_url %></div>
+			<div class="menuItem"><%= link_to current_user.login, url_for(:id => current_user.id, :controller => 'users', :action => 'show') %></div>
+			<div class="menuItem"><%= link_to "kredki", '/quests' %></div>
+			<div class="menuItem"><%= link_to "najlepsi", leaderboard_url %></div>
+			<div class="menuItem"><%= link_to "wyloguj", logout_url %></div>
+		<% else %>
+			<div class="menuItem" id="loggedOutBrowse"><%= link_to "przeglądaj", pics_url %></div>
+			<div class="menuItem"><%= link_to "zaloguj się", login_url %></div>
+			<div class="menuItem"><%= link_to "kredki", '/quests' %></div>
+			<div class="menuItem"><%= link_to "tablica wyników", leaderboard_url %></div>
+		<% end %>
+		<div id="search">
+		<% form_tag search_url(:action=>'pics'), :method => 'komentuj' do %>
+			<%= text_field_tag :search, params[:search], :value => "szukaj" %>
+		<% end %>
+		</div>
+	</div> <!-- end headerContent -->
+</div> <!-- end header -->

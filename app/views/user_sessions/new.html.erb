@@ -1,0 +1,19 @@
+<div id="loginForm">
+<h1>Logowanie</h1>
+<% form_for @user_session, :url => user_session_path do |f| %>
+  <%= f.error_messages %><br />
+  <%= f.label :login, "Email albo Nazwa Użytkownika" %><br />
+  <%= f.text_field :login %><br />
+  <br />
+  <%= f.label :password, "Hasło" %><br />
+  <%= f.password_field :password %><br />
+  <br />
+  <%= f.check_box :remember_me %><%= f.label :remember_me, "Zapamiętaj mnie na tym komputerze" %><br />
+  <br />
+  <br />
+  <br />
+
+  <%= f.submit "zaloguj"%>
+    albo <%= link_to "zarejestruj", signup_url %> 
+<% end %>
+</div>

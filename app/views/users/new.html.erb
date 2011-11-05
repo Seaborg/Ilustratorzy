@@ -1,0 +1,21 @@
+<div id="signup">
+<h1>Rejestracja</h1>
+<% form_for @user do |f| %>
+  <%= f.error_messages %>
+  <%= f.label :email, 'Email/Potrzebny do potwierdzenia rejestracji' %><br />
+  <%= f.text_field :email %><br />
+  <br />
+  <%= f.label :login, 'Nazwa Użytkownika (ta sama która, będzie potrzebna do logowania)' %><br />
+  <%= f.text_field :login %><br />
+  <br />
+  <%= f.label :password, 'Hasło' %><br />
+  <%= f.password_field :password %><br />
+  <br />
+  <%= f.label :password_confirmation, 'Wprowadź ponownie hasło' %><br />
+  <%= f.password_field :password_confirmation %><br />
+  <br />
+  <br />
+  <%= f.submit "rejestruj" %>
+  albo <%= link_to "zaloguj", login_url %> 
+<% end %>
+</div>
